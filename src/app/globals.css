@@ -16,12 +16,22 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@font-face {
+  font-family: monu_ex_reg;
+  src: url(../../public/fonts/monument/MonumentExtended-Regular.otf);
 }
+
+.monu_ex_reg {
+  font-family: monu_ex_reg;
+}
+
+@font-face {
+  font-family: space_grotesk;
+  src: url(../../public/fonts/SpaceGrotesk/SpaceGrotesk-Regular.otf);
+}
+
+.space_grotesk {
+  font-family: space_grotesk;
+}
+
+/* shadcn */
