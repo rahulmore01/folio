@@ -1,5 +1,4 @@
-import React from "react";
-
+"use client";
 const Hero = () => {
   return (
     <div className="flex items-center justify-center h-screen bg-[#181818] text-white monu_ex_reg">
