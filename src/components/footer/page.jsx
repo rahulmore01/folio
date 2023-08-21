@@ -2,12 +2,12 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col items-center justify-center  bg-[#121212] text-white  py-[50px] monu_ex_reg">
+    <div className="flex flex-col items-center justify-center  bg-[#121212] text-white  py-[50px] space-x-6 monu_ex_reg">
       <Image
         className="text-white bg-white"
         src="/assets/Logo.svg" // Make sure to provide the actual image source
         alt=""
-        width={140}
+        width={100}
         height={60}
       />
       <ul className="flex h-[46px] gap-6 mt-6 text-base space-x-2 opacity-90 ">
