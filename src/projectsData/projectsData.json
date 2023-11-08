@@ -25,5 +25,86 @@
     "link": "https://butbybit.com/",
     "gitLink": "",
     "category": "Frontend, Nextjs, Tailwind"
+  },
+  {
+    "title": "BBB Hub",
+    "subtitle": "E-Learning Platform",
+    "para1": "Worked on some important features like referral reward system for students, dark mode & state management etc.",
+    "para2": "Used Nextjs along with ant design to create a seamless and responsive frontend.",
+    "link": "https://butbybit.com/",
+    "gitLink": "",
+    "category": "Frontend, Nextjs, Reactjs"
+  },
+  {
+    "title": "Kanban Board",
+    "subtitle": "Your ToDo Buddy",
+    "para1": "Developed Kanban board having a User Interface Like Notion ",
+    "para2": "It has a filter to show tasks according to either its status or by user who created it.",
+    "link": "",
+    "gitLink": "https://github.com/rahulmore01/kanban",
+    "category": "Frontend, Reactjs"
+  },
+  {
+    "title": "BBB Hub",
+    "subtitle": "E-Learning Platform",
+    "para1": "Worked on some important features like referral reward system for students, dark mode & state management etc.",
+    "para2": "Used Nextjs along with ant design to create a seamless and responsive frontend.",
+    "link": "https://butbybit.com/",
+    "gitLink": "",
+    "category": "Frontend, Nextjs, Tailwind"
+  },
+  {
+    "title": "BBB Hub",
+    "subtitle": "E-Learning Platform",
+    "para1": "Worked on some important features like referral reward system for students, dark mode & state management etc.",
+    "para2": "Used Nextjs along with ant design to create a seamless and responsive frontend.",
+    "link": "https://butbybit.com/",
+    "gitLink": "",
+    "category": "Frontend, Nextjs, Reactjs"
+  },
+  {
+    "title": "Kanban Board",
+    "subtitle": "Your ToDo Buddy",
+    "para1": "Developed Kanban board having a User Interface Like Notion ",
+    "para2": "It has a filter to show tasks according to either its status or by user who created it.",
+    "link": "",
+    "gitLink": "https://github.com/rahulmore01/kanban",
+    "category": "Frontend, Reactjs"
+  },
+  {
+    "title": "BBB Hub",
+    "subtitle": "E-Learning Platform",
+    "para1": "Worked on some important features like referral reward system for students, dark mode & state management etc.",
+    "para2": "Used Nextjs along with ant design to create a seamless and responsive frontend.",
+    "link": "https://butbybit.com/",
+    "gitLink": "",
+    "category": "Frontend, Nextjs, Tailwind"
+  },
+  {
+    "title": "BBB Hub",
+    "subtitle": "E-Learning Platform",
+    "para1": "Worked on some important features like referral reward system for students, dark mode & state management etc.",
+    "para2": "Used Nextjs along with ant design to create a seamless and responsive frontend.",
+    "link": "https://butbybit.com/",
+    "gitLink": "",
+    "category": "Frontend, Nextjs, Reactjs"
+  },
+  {
+    "title": "Kanban Board",
+    "subtitle": "Your ToDo Buddy",
+    "para1": "Developed Kanban board having a User Interface Like Notion ",
+    "para2": "It has a filter to show tasks according to either its status or by user who created it.",
+    "link": "",
+    "gitLink": "https://github.com/rahulmore01/kanban",
+    "category": "Frontend, Reactjs"
+  },
+  {
+    "title": "BBB Hub",
+    "subtitle": "E-Learning Platform",
+    "para1": "Worked on some important features like referral reward system for students, dark mode & state management etc.",
+    "para2": "Used Nextjs along with ant design to create a seamless and responsive frontend.",
+    "link": "https://butbybit.com/",
+    "gitLink": "",
+    "category": "Frontend, Nextjs, Tailwind"
   }
 ]

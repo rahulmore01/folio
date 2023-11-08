@@ -148,7 +148,7 @@ const Navbar = () => {
           height={100}
         />
 
-        <ul className="monu_ex_reg flex gap-12 text-neutral-400 text-sm  vvs:hidden md:ml-0 md:block md:space-x-6 lg:block lg:space-x-10 lg:pl-16">
+        <ul className="monu_ex_reg flex gap-12 text-neutral-400 text-sm  vvs:hidden md:ml-0 md:hidden md:space-x-6 lg:block lg:space-x-10 lg:pl-16">
           <Link className="hover:text-white" href="/ ">
             Home
           </Link>
