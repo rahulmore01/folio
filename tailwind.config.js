@@ -7,9 +7,11 @@ module.exports = {
   ],
   theme: {
     extend: {
-      // colors: {
-      //   bg_color2: #121212,
-      // },
+      screens: {
+        vvs: "350px",
+        md: "700px",
+        lg: "1200px",
+      },
     },
   },
   plugins: [],
