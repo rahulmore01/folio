@@ -1,62 +1,141 @@
-// import gridSvg from "../../../public/assets/grid.png"; // Import your SVG image
-
+"use client";
 import Image from "next/image";
+import useCursorAnimation from "../../hook/useCursorAnimation";
+import { motion } from "framer-motion";
 
 const Hero = () => {
+  const { variants, textEnter, textLeave, cursorVariant } =
+    useCursorAnimation();
+
   return (
-    // bg-[#181818]
-    <div
-      className="flex items-center justify-center h-screen bg-[#000000] text-white monu_ex_reg"
-      style={{
-        backgroundImage: `url(/assets/gridlight.png)`, // Update the path
-        backgroundSize: "cover",
-      }}
-    >
-      <div className="flex flex-col justify-center items-center">
+    <section className="hero ">
+      <motion.div
+        className="cursor"
+        variants={variants}
+        animate={cursorVariant}
+      />
+      <div
+        className="flex items-center justify-center h-screen bg-[#000000] text-white monu_ex_reg"
+        style={{
+          backgroundImage: `url(/assets/gridlight.png)`, // Update the path
+          backgroundSize: "cover",
+        }}
+      >
         <div className="flex flex-col justify-center items-center">
-          <h1 className="text-3xl">
-            I'm <span>Rahul</span>
-          </h1>
-          <h1 className="text-3xl mt-4">I develop creative web applications</h1>
-        </div>
-        {/* cta */}
-        <div className="flex gap-6 mt-10 ">
-          <div className="cursor-pointer text-gray-100 rounded-xl border px-8 py-[10px] bg-gray-600">
-            Hire Me
+          <div className="flex flex-col justify-center items-center">
+            <h1
+              onMouseEnter={textEnter}
+              onMouseLeave={textLeave}
+              className="text-xl  md:text-[24px] lg:text-3xl"
+              // className="text-3xl"
+            >
+              <span className=" bg-gradient-to-b from-white via-[#f5f5f5] text-transparent bg-clip-text   ">
+                I'm{" "}
+              </span>
+
+              <span className=" bg-gradient-to-b from-white via-[#f5f5f5] text-transparent bg-clip-text">
+                Rahul.
+              </span>
+            </h1>
+            <h1
+              onMouseEnter={textEnter}
+              onMouseLeave={textLeave}
+              className="text-xl text-center mt-3 bg-gradient-to-b from-white via-[#f5f5f5] text-transparent bg-clip-text md:text-[24px] lg:text-3xl"
+            >
+              I develop creative web applications
+            </h1>
           </div>
-          <div className="cursor-pointer text-gray-100 rounded-xl border px-8 py-[10px] ">
-            Projects
+          {/* cta */}
+          <div className="flex flex-col gap-6 mt-10 text-[14px] lg:text-[16px] md:text-[18px] lg:flex-row md:flex-row">
+            {/* <div className="flex gap-6 mt-10 text-lg"> */}
+            <div className="cursor-pointer text-gray-100 rounded-xl border px-10 py-[14px]  bg-[#414141] hover:bg-white hover:text-black ">
+              Hire Me
+            </div>
+            <div className="cursor-pointer text-neutral-400 rounded-xl border px-10 py-[14px]  hover:text-gray-100 hover:border-white">
+              Projects
+            </div>
           </div>
+
+          <Image
+            className="h-20 w-20 fixed mt-[88vh] hover:opacity-0"
+            src="/images/rahul.png"
+            alt="me"
+            width="100"
+            height="100"
+          />
         </div>
       </div>
-      {/* <Image src="/assets/grid.png" height={100} width={100} /> */}
-    </div>
+    </section>
   );
 };
 
 export default Hero;
-
 // "use client";
 // import Image from "next/image";
+// import useCursorAnimation from "../../hook/useCursorAnimation";
+// import { motion } from "framer-motion";
+
 // const Hero = () => {
+//   const { variants, textEnter, textLeave, cursorVariant } =
+//     useCursorAnimation();
+
 //   return (
-//     <Image width={100%} height={100%} src="/assets/grid.svg">
-//       <div className="flex items-center justify-center h-screen bg-[#181818] text-white monu_ex_reg">
-//         <div className="text-center">
-//           <div className="hero_text">
-//             <div className="hero_text_title">I'm Rahul</div>
-//             <div className="hero_text_subtitle">
+//     <section className="hero">
+//       <motion.div
+//         className="cursor"
+//         variants={variants}
+//         animate={cursorVariant}
+//       />
+//       <div
+//         className="flex items-center justify-center h-screen bg-[#000000] text-white monu_ex_reg"
+//         style={{
+//           backgroundImage: `url(/assets/gridlight.png)`, // Update the path
+//           backgroundSize: "cover",
+//         }}
+//       >
+//         <div className="flex flex-col justify-center items-center">
+//           <div className="flex flex-col justify-center items-center">
+//             <h1
+//               onMouseEnter={textEnter}
+//               onMouseLeave={textLeave}
+//               className="text-3xl"
+//             >
+//               <span className=" bg-gradient-to-b from-white via-[#f5f5f5] text-transparent bg-clip-text">
+//                 I'm{" "}
+//               </span>
+
+//               <span className=" bg-gradient-to-b from-white via-[#f5f5f5] text-transparent bg-clip-text">
+//                 Rahul.
+//               </span>
+//             </h1>
+//             <h1
+//               onMouseEnter={textEnter}
+//               onMouseLeave={textLeave}
+//               className="text-3xl mt-3 bg-gradient-to-b from-white via-[#e4e4e4] text-transparent bg-clip-text"
+//             >
 //               I develop creative web applications
-//             </div>
+//             </h1>
 //           </div>
 //           {/* cta */}
-//           <div className="hero_cta mt-4">
-//             <div className="px-4 py-2 border border-sky-500">Let's talk</div>
-//             <div className="hero_cta_next">View work</div>
+//           <div className="flex gap-6 mt-10 text-lg">
+//             <div className="cursor-pointer text-gray-100 rounded-xl border px-10 py-[14px] bg-[#414141] hover:bg-white hover:text-black ">
+//               Hire Me
+//             </div>
+//             <div className="cursor-pointer text-neutral-400 rounded-xl border px-10 py-[14px]  hover:text-gray-100 hover:border-white">
+//               Projects
+//             </div>
 //           </div>
+
+//           <Image
+//             className="h-20 w-20 fixed mt-[88vh] hover:opacity-0"
+//             src="/images/rahul.png"
+//             alt="me"
+//             width="100"
+//             height="100"
+//           />
 //         </div>
 //       </div>
-//     </Image>
+//     </section>
 //   );
 // };
 
